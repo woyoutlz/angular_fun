@@ -1,21 +1,18 @@
-#test the angular  bower node type;
-#结果改成用webpack了，比brunch好用啊;
-
-#开始回答那个问题吧
-1. ng-if跟ng-show/hide的区别有哪些？
-## app bootstrap
+var angular = require("angular");
+var config = require("../config/main");
+var app_name = config.name;
 module.exports = function(arr){
     if(arr){
-        var app = angular.module('myApp',arr);
+        var app = angular.module(app_name,arr);
     }else{
-        var app = angular.module('myApp',[]);
+        var app = angular.module(app_name,[]);
     }
     angular.element(document).ready(function () {
-        angular.bootstrap(document, ['myApp']);
+        angular.bootstrap(document, [app_name]);
     });
 
     app.controller("one", ["$scope", "$http", function ($scope, $http) {
-
+        $scope.name = "yangyu"
     }]);
     app.filter('rawHtml', ['$sce', function($sce){
         return function(val) {
@@ -24,5 +21,3 @@ module.exports = function(arr){
     }]);
     return app;
 };
-## 多建立了一个boot.js 文件
-##

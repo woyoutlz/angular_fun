@@ -1,2 +1,1 @@
-var angular = require("angular");
-console.log(angular);
+require("./boot")();
