@@ -1,0 +1,15 @@
+{
+  "name": "angular_fun",
+  "version": "0.0.0",
+  "authors": [
+    "yangyu <yundkyy@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
