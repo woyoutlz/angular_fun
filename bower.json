@@ -10,6 +10,10 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "libs"
+  ],
+  "moduleType": [
+    "node"
   ]
 }
