@@ -25,4 +25,6 @@ module.exports = function(arr){
     return app;
 };
 ## 多建立了一个boot.js 文件
+
+## 创建非常多得dom，来证明差别
 ##
